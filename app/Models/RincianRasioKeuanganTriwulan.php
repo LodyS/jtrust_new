@@ -1,0 +1,26 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class RincianRasioKeuanganTriwulan extends Model
+{
+    protected $table = 'form_008';
+
+    public function storeRincianRasioKeuanganTriwulan($explodeLine)
+    {
+        $this->flag_detail = $explodeLine[0];
+
+        $explodeLine[$explodeLine[0]] = isset($explodeLine[1]) ? $explodeLine[1] : 'Data Kosong';
+        $this->sandi_pos = $explodeLine[$explodeLine[0]];
+
+        $explodeLine[$explodeLine[0]] = isset($explodeLine[2]) ? $explodeLine[2] : 'Data Kosong';
+        $this->nilai_rasio = $explodeLine[$explodeLine[0]];
+
+        $this->header_id = $explodeLine['header_id'];
+        $save = $this->save();
+
+        return $save;
+    }
+}

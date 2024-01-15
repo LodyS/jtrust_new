@@ -1,0 +1,58 @@
+
+.nama {
+    max-width: 15px;
+}
+
+.manajemen {
+    max-width: 25px;
+}
+
+.paragraf {
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 5px;
+}
+
+.wrapword {
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -webkit-pre-wrap;          /* Chrome & Safari */
+    white-space: -pre-wrap;                 /* Opera 4-6 */
+    white-space: -o-pre-wrap;               /* Opera 7 */
+    white-space: pre-wrap;                  /* CSS3 */
+    word-wrap: break-word;                  /* Internet Explorer 5.5+ */
+    word-break: break-all;
+    white-space: normal;
+}
+
+.ariel {
+    font-family: Arial;
+    font-size:15px;
+}
+
+#header {
+    background: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 5px 0;
+    border-style: ridge;
+    border-collapse: collapse;
+    border-width: 1px;
+    height:25px;
+    line-height: 5%;
+}
+
+#content {
+    background: #ffffff;
+    color: #000000;
+    text-align: left;
+    padding: 10px 0;
+    border-style: ridge;
+    border-collapse: collapse;
+    border-width: 1px;
+}
+
+#tabel_stail {
+    width:100%; 
+    border-style: ridge;  
+    border-collapse: collapse;
+}

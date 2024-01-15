@@ -1,0 +1,33 @@
+@extends('tema.app')
+@section('content')
+
+<div class="card border-white" style="width: 100rem;">
+    <div class="card-body">
+        @include('flash-message')
+        <h4>Form 14 - Rincian Liabilitas Lainnya</h4>
+
+        <div style="height:40px" align="centre"></div>
+
+        <form action="{{ url('simpan-rincian-liabilitas-lainnya') }}" method="POST"  enctype="multipart/form-data">@csrf
+
+        @include('error-message')
+
+        <div class="form-group row">
+		    <label class="col-md-3">File (Txt format)</label>
+			    <div class="col-md-7">
+                <input type="file" class="form-control" name="file" accept=".txt" required>
+		    </div>
+	    </div>
+
+        <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+
+    </div>
+</div>
+@endsection
+
+
+
+
+
