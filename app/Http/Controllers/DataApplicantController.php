@@ -98,19 +98,6 @@ class DataApplicantController extends Controller
         return response()->json(['success'=>"Delete Data Successfly."]);
     }
 
-    public function selectExcute (Request $request)
-    {
-        $data = LoanApplicant::where('loan_applicants.id', $request->id)->first();
-
-        echo json_encode($data);
-    }
-
-    public function excute (Request $request)
-    {
-        LoanApplicant::where('id', $request->id)->update(['status'=>'Excuted']);
-        return response()->json(['success'=>"Excute Data Successfly."]);
-    }
-
     public function perpanjangan($id)
     {
         $data = LoanApplicant::where('uuid', $id)->firstOrFail();

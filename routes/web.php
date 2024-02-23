@@ -128,7 +128,6 @@ Route::group(['middleware' => 'auth'], function () {
             Route::post('update-pengajuan-pinjaman', 'update');
             Route::get('delete-pengajuan-pinjaman', 'delete')->name('delete-pengajuan-pinjaman');
             Route::post('destroy-pengajuan-pinjaman', 'destroy')->name('destroy-pengajuan-pinjaman');
-            Route::post('excute-pengajuan-pinjaman', 'excute')->name('excute-pengajuan-pinjaman');
             Route::get('perpanjangan-pinjaman/{id}', 'perpanjangan');
             Route::get('edit-perpanjangan-pinjaman/{id}', 'editPerpanjangan');
             Route::post('simpan-perpanjangan-pinjaman', 'simpanPerpanjangan');
